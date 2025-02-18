@@ -16,8 +16,8 @@ const ProjectsMasonry = ({ projects }) => {
                 {projectRows.map((row, row_key) => (
                 <React.Fragment key={`projects-item-${row_key}`}>
                     {row.map((item, key) => (
-                    <div className={row_key%2==0 ? key%2 == 0 ? "col-lg-5" : "col-lg-6" : key%2 == 0 ? "col-lg-6" : "col-lg-5"} key={`projects-item-${row_key}-${key}`}>
-                        <Link href={`/projects/${item.id}`} className="mil-portfolio-item mil-mb-60">
+                    <div className={row_key%2==0 ? key%2 == 0 ? "col-lg-5" : "col-lg-6" : key%2 == 0 ? "col-lg-6" : "col-lg-5" } key={`projects-item-${row_key}-${key}`}>
+                        <Link href={`/case-studies/${item.id}`} className="mil-portfolio-item mil-mb-60">
                             <div className="mil-cover-frame mil-up">
                                 <img src={item.image} alt={item.title} />
                             </div>

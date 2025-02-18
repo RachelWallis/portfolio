@@ -34,9 +34,9 @@ const PageBanner = ({ pageTitle, breadTitle, align }) => {
                     <Link href="/blog">Blog</Link>
                   </li>
                   }
-                  {asPath.indexOf('/projects/') != -1 &&
+                  {asPath.indexOf('/case-studies/') != -1 &&
                   <li>
-                    <Link href="/projects">Projects</Link>
+                    <Link href="/case-studies">Case Studies</Link>
                   </li>
                   }
                   {asPath.indexOf('/services/') != -1 &&

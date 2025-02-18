@@ -63,6 +63,7 @@ h1,
 .mil-h1 {
     font-size: $h1;
     line-height: 100%;
+    font-weight: 800;
 
     &.mil-h1-sm {
         font-size: $h1 - 32px;

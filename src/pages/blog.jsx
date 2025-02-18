@@ -3,18 +3,15 @@ import PaginatedBlog from '@components/PaginatedBlog'
 import Pagination from '@components/Pagination'
 
 import PageBanner from "@components/PageBanner";
-import SubscribeSection from "@components/sections/Subscribe";
+import CallToActionSection from "@components/sections/CallToAction";
 import Layouts from "@layouts/Layouts";
 
 import { getPaginatedPostsData } from "@library/posts";
 
-const Blog = ( { posts, totalPosts, currentPage } ) => {
+const Blog2 = ( { posts, totalPosts, currentPage } ) => {
   return (
-    <Layouts
-      rightPanelBackground={"/img/person/bg-2.jpg"}
-      rightPanelImg={"/img/person/1.png"}
-    >
-      <PageBanner pageTitle={"Exploring the World <br>Through Our Blog"} breadTitle={"Blog"} align={"center"} />
+    <Layouts fullWidth>
+      <PageBanner pageTitle={"Blog"} breadTitle={"Blog"} align={"center"} />
 
       {/* blog */}
       <section>
@@ -33,12 +30,12 @@ const Blog = ( { posts, totalPosts, currentPage } ) => {
       </section>
       {/* blog end */}
 
-      <SubscribeSection />
+      <CallToActionSection />
 
     </Layouts>
   );
 };
-export default Blog;
+export default Blog2;
 
 export async function getStaticProps() {
   const { posts, total } = getPaginatedPostsData( PER_PAGE, 1 );

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Layouts from "@layouts/Layouts";
 import dynamic from "next/dynamic";
 
-import { getSortedProjectsData } from "@library/projects";
+import { getSortedProjectsData } from "@/src/lib/case-studies";
 
 const ProjectsSlider = dynamic( () => import("@components/sliders/Projects"), { ssr: false } );
 

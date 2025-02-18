@@ -64,8 +64,6 @@ const Layouts = ({
             extraclassName={extraClass}
           />
         )}
-
-        <LeftPanel />
         
         <BackToTop />
       </div>

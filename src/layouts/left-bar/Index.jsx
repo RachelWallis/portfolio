@@ -5,9 +5,6 @@ const leftPanelModule = () => {
         <>
         {/* left bar */}
         <div className="mil-left-panel">
-
-            <div className="mil-page-name mil-upper mil-dark">Rachel-Wallis.com</div>
-
             <ul className="mil-social-icons">
                 {appData.social.map((item, key) => (
                 <li key={`lp-social-item-${key}`}><a href={item.link} target="_blank" className="social-icon"><i className={item.icon} /></a></li>
