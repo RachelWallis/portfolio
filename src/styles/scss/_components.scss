@@ -341,7 +341,7 @@ frame
                     text-decoration: none;
                     text-transform: uppercase;
                     color: $panel-text-color;
-                    font-size: 12px;
+                    font-size: 16px;
                     font-weight: 600;
                     letter-spacing: 2px;
                     white-space: nowrap;
@@ -595,8 +595,7 @@ frame
 
 .mil-content {
     padding-top: 90px;
-    margin-left: 90px;
-    width: calc(100% - 90px);
+    width: 100%;
     display: flex;
     justify-content: space-between;
 
@@ -876,7 +875,7 @@ about
     padding-top: 25px;
     display: flex;
     justify-content: center;
-    background-color: $dt-10;
+    background: $dt-95;
     width: 170px;
     height: 230px;
     border-top-right-radius: 200px;
@@ -892,7 +891,7 @@ about
     padding-bottom: 25px;
     display: flex;
     justify-content: center;
-    background-color: $dt-10;
+    background: $dt-95;
     width: 170px;
     height: 170px;
     border-bottom-right-radius: 200px;
@@ -945,7 +944,7 @@ circle text
         height: 140px;
 
         & text {
-            fill: $dark;
+            fill: rgb(255 0 166);
             text-transform: uppercase;
             font-size: 12px;
             font-weight: 500;
@@ -955,11 +954,11 @@ circle text
 
     & .mil-button {
         position: absolute;
-        border: solid 15px $light;
+        border: solid 4px $light;
     }
 
     & .mil-button {
-        background-color: $dark;
+        background: $gradient-1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1066,11 +1065,11 @@ iconbox
     justify-content: center;
     align-items: center;
 
-    & .mil-service-icon {
+    & .mil-skill-icon {
         padding: 20px;
-        height: 80px;
-        width: 80px;
-        background-color: $gs-5;
+        height: 100px;
+        width: 100px;
+        background-color: $dt-95;
         border-radius: 50%;
         margin-bottom: 30px;
 
@@ -1082,7 +1081,7 @@ iconbox
     }
 
     &:hover {
-        & .mil-service-icon {
+        & .mil-skill-icon {
             & img {
                 transform: scale(1.1);
             }
@@ -1098,6 +1097,9 @@ blog
 
 .mil-blog-card {
     display: block;
+    padding: 20px;
+    margin: 10px;
+    background: $dt-20;
 
     & .mil-cover {
         position: relative;
@@ -1252,7 +1254,7 @@ reviews
 
 /* -------------------------------------------
 
-puplication details
+publication details
 
 ------------------------------------------- */
 
@@ -1293,9 +1295,8 @@ puplication details
         & img {
             width: 40px;
             height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: top;
+            object-fit: scale-down;
+            object-position: center;
             margin-right: 15px;
         }
     }
@@ -1503,7 +1504,7 @@ pagination
 
 /* -------------------------------------------
 
-story timeline
+CV
 
 ------------------------------------------- */
 .mil-timeline {
@@ -1639,12 +1640,15 @@ categories
 
 /* -------------------------------------------
 
-portfolio item
+portfolio item card (case studies)
 
 ------------------------------------------- */
 
 .mil-portfolio-item {
     display: block;
+    background-color: $dt-95;
+    padding: 20px;
+    margin: 10px;
 
     & .mil-cover-frame {
         position: relative;
@@ -1669,6 +1673,23 @@ portfolio item
         }
     }
 
+    & .mil-title {
+        background: $pink-95;
+        padding: 4px 8px;
+
+        &.web-design {
+            background: $purp-60;
+        }
+
+        &.prod-design {
+            background: $pink-60;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
     & .mil-description {
         padding-top: 30px;
         display: flex;
@@ -1676,9 +1697,14 @@ portfolio item
         justify-content: space-between;
         align-items: flex-end;
         z-index: 1;
+        gap: 10px;
 
         & .mil-btn {
             margin-left: 30px;
+        }
+
+        p, h6 {
+            color: white;
         }
     }
 
@@ -1771,6 +1797,134 @@ portfolio item
 
 /* -------------------------------------------
 
+portfolio page
+------------------------------------------- */
+.mil-portfolio-section {
+    margin-bottom: 30px;
+
+    &.project-hero {
+        img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    &.section-w-img {
+        display: flex;
+        gap: 20px; 
+        align-items: flex-start;
+        
+        @media screen and (max-width: 768px) {
+            flex-direction: column; 
+        }
+
+        .project-section__image {
+            max-width: 45%;
+            align-self: flex-end;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    ul {
+        margin-left: 30px;
+        margin-top: 20px;
+
+        li::marker {
+            color: $accent;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .project-gallery {
+        padding: 2rem 1rem;
+      
+        h4 {
+          font-size: 1.8rem;
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+      
+        &__grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+          gap: 1.5rem;
+          align-items: start;
+        }
+      
+        &__item {
+          background: #fff;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+      
+          img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+          }
+      
+          &:hover img {
+            transform: scale(1.05);
+          }
+      
+          & .project-gallery__caption {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            background-color: #f8f8f8;
+            border-top: 1px solid #e0e0e0;
+            line-height: 1.4;
+          }
+        }
+      
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+          &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+          }
+      
+          &__caption {
+            font-size: 0.85rem;
+          }
+        }
+      
+        @media (max-width: 480px) {
+          &__grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+}
+
+.related-projects {
+    h4 {
+        color: white;
+    }
+}
+
+/* -------------------------------------------
+
+CV
+
+------------------------------------------- */
+
+.mil-cv-section {
+    margin-bottom: 60px;
+}
+
+
+/* -------------------------------------------
+
 carousel navigation
 
 ------------------------------------------- */
@@ -1854,6 +2008,8 @@ carousel navigation
         }
     }
 }
+
+
 
 /* -------------------------------------------
 
@@ -2033,7 +2189,7 @@ footer {
     width: 100%;
     background-color: $dark;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     &:before,

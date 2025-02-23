@@ -9,7 +9,7 @@ import { getPaginatedPostsData } from "@library/posts";
 
 export const PER_PAGE = 8
 
-import { Content } from "../../blog"
+import { Content } from ".."
 
 const Blog = ( { posts, currentPage, totalPosts } ) => {
 

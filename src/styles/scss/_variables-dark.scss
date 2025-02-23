@@ -3,10 +3,6 @@
 
 $font-1: 'Outfit', sans-serif;
 
-$dark: rgba(32, 33, 36, 1);
-$light: rgba(255, 255, 255, 1);
-$accent: rgba(244, 67, 54, 1);
-
 $dt-5: rgba(32, 33, 36, .05);
 $dt-10: rgba(32, 33, 36, .1);
 $dt-20: rgba(32, 33, 36, .2);
@@ -44,16 +40,52 @@ $gs-80: rgba(77, 77, 80, 1);
 $gs-90: rgba(54, 55, 58, 1);
 $gs-95: rgba(43, 44, 47, 1);
 
-$h1: 92px;
-$h2: 38px;
-$h3: 24px;
-$h4: 18px;
-$h5: 16px;
-$h6: 14px;
+$purp-1: rgba(245, 244, 255, 1);   
+$purp-5: rgba(222, 221, 255, 1);  
+$purp-10: rgba(208, 205, 250, 1);
+$purp-20: rgba(190, 186, 244, 1);
+$purp-30: rgba(170, 166, 237, 1);
+$purp-40: rgba(150, 146, 230, 1);
+$purp-50: rgba(130, 126, 223, 1);
+$purp-60: rgba(120, 116, 215, 1);
+$purp-70: rgba(110, 106, 208, 1);
+$purp-80: rgba(105, 100, 204, 1);
+$purp-90: rgba(100, 95, 200, 1);
+$purp-95: rgba(96, 91, 204, 1);   
 
-$text: 15px;
+$pink-1: rgba(255, 235, 245, 1);    
+$pink-5: rgba(255, 220, 235, 1);  
+$pink-10: rgba(255, 200, 225, 1);  
+$pink-20: rgba(250, 175, 210, 1);  
+$pink-30: rgba(245, 150, 195, 1);  
+$pink-40: rgba(240, 125, 180, 1);  
+$pink-50: rgba(235, 105, 165, 1);  
+$pink-60: rgba(230, 90, 155, 1);  
+$pink-70: rgba(225, 80, 145, 1);  
+$pink-80: rgba(220, 72, 140, 1);  
+$pink-90: rgba(218, 67, 135, 1);  
+$pink-95: rgba(215, 62, 133, 1);    
 
-$logo-bg-color: $accent;
+$dark: rgba(32, 33, 36, 1);
+$light: rgba(255, 255, 255, 1);
+
+
+$h1: 124px;
+$h2: 92px;
+$h3: 64px;
+$h4: 38px;
+$h5: 24px;
+$h6: 18px;
+
+$text: 18px;
+
+
+$light: rgba(255, 255, 255, 1);
+$accent: rgba(96, 91, 204,1);
+$accent-2: rgba(215, 62, 133,1);
+$light-accent: $purp-5;
+
+$logo-bg-color: transparent;
 $logo-dot-color: $light;
 $panel-color: $dark;
 $panel-dropdown-color: $accent;
@@ -63,3 +95,13 @@ $panel-text-color: $lt-90;
 $t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
 $t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
 $t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+
+$gradient-1:
+radial-gradient(at 5% 97%, hsla(306,71%,74%,1) 0px, transparent 50%),
+radial-gradient(at 70% 81%, hsla(242,52%,57%,1) 0px, transparent 50%),
+radial-gradient(at 84% 55%, hsla(293,100%,62%,1) 0px, transparent 50%),
+radial-gradient(at 91% 24%, hsla(323,100%,73%,1) 0px, transparent 50%),
+radial-gradient(at 12% 53%, hsla(240,54%,57%,1) 0px, transparent 50%);
+$gradient-1-fallback: #c399ff;
+
+

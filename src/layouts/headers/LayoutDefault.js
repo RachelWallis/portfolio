@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import appData from "@data/app.json";
 import { useRouter } from 'next/router';
+import Image from "next/image";
 
 const DefaultHeader = ({ extraClass }) => {
   const [toggle, setToggle] = useState(false);
@@ -31,7 +32,7 @@ const DefaultHeader = ({ extraClass }) => {
 
         {/* You need to remove the "mil-dot" class if you don't need a dot */}
         <Link href={appData.header.logo.link} className="mil-logo">
-          <span className="mil-dot">{appData.header.logo.symbol}</span>
+          <span className="logo-R"><Image src={"/img/R.svg"} width={75} height={75} /></span>
         </Link>
 
         <div className={`mil-navigation ${toggle ? "mil-active" : ""}`}>

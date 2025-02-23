@@ -1,0 +1,36 @@
+
+{
+    "title": "Skills & Tools",
+    "items": [
+      {
+        "title": "UI Design",
+        "icon": "/img/icons/skills/design-100.png",
+        "text": "Creating visually appealing, user-centric interfaces."
+      },
+      {
+        "title": "Design Systems",
+        "icon": "/img/icons/skills/web-100.png",
+        "text": "Building scalable design systems with Figma, Storybook, SCSS."
+      },
+      {
+        "title": "UX Research",
+        "icon": "/img/icons/skills/laptop-100.png",
+        "text": "Conducting user research and usability testing."
+      },
+      {
+        "title": "Wireframing",
+        "icon": "/img/icons/skills/prototype-100.png",
+        "text": "Designing wireframes and prototypes for user flows."
+      },
+      {
+        "title": "Frontend Development",
+        "icon": "/img/icons/skills/google-code-100.png",
+        "text": "HTML, (S)CSS, JS, React, and Next.js for responsive interfaces."
+      },
+      {
+        "title": "Software/Tools",
+        "icon": "/img/icons/skills/laptop-with-cursor-100.png",
+        "text": "Figma, Storybook, Webflow, Framer, Miro, Trello, Notion, Jira, GitHub."
+      }
+    ]
+  }

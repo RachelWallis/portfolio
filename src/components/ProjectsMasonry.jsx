@@ -16,15 +16,17 @@ const ProjectsMasonry = ({ projects }) => {
                 {projectRows.map((row, row_key) => (
                 <React.Fragment key={`projects-item-${row_key}`}>
                     {row.map((item, key) => (
-                    <div className={row_key%2==0 ? key%2 == 0 ? "col-lg-5" : "col-lg-6" : key%2 == 0 ? "col-lg-6" : "col-lg-5"} key={`projects-item-${row_key}-${key}`}>
-                        <Link href={`/projects/${item.id}`} className="mil-portfolio-item mil-mb-60">
+                    <div className={row_key%2==0 ? key%2 == 0 ? "col-lg-6" : "col-lg-6" : key%2 == 0 ? "col-lg-6" : "col-lg-6" } key={`projects-item-${row_key}-${key}`}>
+                        <Link href={`/case-studies/${item.id}`} className="mil-portfolio-item mil-mb-60">
+                        <div className={`mil-title ${item.class}`}>
+                            <p className="mil-upper mil-mb-5">{item.category}</p>
+                        </div>
                             <div className="mil-cover-frame mil-up">
                                 <img src={item.image} alt={item.title} />
                             </div>
                             <div className="mil-description mil-up">
                                 <div>
-                                    <p className="mil-upper mil-mb-5">{item.category}</p>
-                                    <h4>{item.title}</h4>
+                                    <h6>{item.title}</h6>
                                 </div>
                                 <div className="mil-link mil-icon-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right">

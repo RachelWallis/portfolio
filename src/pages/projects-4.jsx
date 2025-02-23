@@ -5,7 +5,7 @@ import PageBanner from "@components/PageBanner";
 import ProjectsGrid from "@components/ProjectsGrid";
 import CallToActionSection from "@components/sections/CallToAction";
 
-import { getSortedProjectsData } from "@library/projects";
+import { getSortedProjectsData } from "@/src/lib/case-studies";
 
 import Link from "next/link";
 

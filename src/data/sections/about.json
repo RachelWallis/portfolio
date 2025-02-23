@@ -1,12 +1,8 @@
 {
     "avatar": {
-        "image": "/img/person/avatar.jpg",
-        "alt": "avatar"
+        "image": "/img/person/rachel.png",
+        "alt": "Rachel Wallis"
     },
-    "title": "Hi! My name is Courtney, <br/>i’m UI/UX Designer based in Toronto",
-    "description": "I am a passionate and dedicated UI/UX designer with a strong focus on creating exceptional user experiences. I thrive on transforming complex ideas into intuitive and visually appealing designs. With a keen eye for detail and a user-centered approach, I strive to deliver impactful solutions that engage and delight users. Let's collaborate to bring your digital products to life!",
-    "signature": {
-        "image": "/img/person/sign.png",
-        "alt": "signature"
-    }
+    "title": "Hi! I’m Rachel Wallis",
+    "description": "I’m a Product Designer who is passionate about building intuitive, scalable products that users love. I love the power and flexibility of design systems to create a common design language and streamline development. I always focus on solving problems for the user, not creating solutions that just look great."
 }

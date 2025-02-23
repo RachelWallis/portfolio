@@ -5,10 +5,7 @@ import appData from "@data/app.json";
 
 const Contact = () => {
   return (
-    <Layouts
-      rightPanelBackground={"/img/person/bg-2.jpg"}
-      rightPanelImg={"/img/person/7.png"}
-    >
+    <Layouts fullWidth>
         <PageBanner pageTitle={"Get in touch!"} align={"center"} />
       
         {/* info */}
@@ -16,33 +13,22 @@ const Contact = () => {
             <ul className="mil-puplication-details mil-up mil-mb-90">
                 <li>
                     <span className="mil-upper mil-accent">Call: </span>&nbsp;&nbsp;
-                    <span className="mil-upper mil-dark">+27(034)765 64 X5</span>
+                    <span className="mil-upper mil-dark">+44(0)752 654 9897</span>
                 </li>
                 <li>
-                    <span className="mil-upper mil-accent">Write: </span>&nbsp;&nbsp;
-                    <span className="mil-upper mil-dark">miller.themes@gmail.com</span>
+                    <span className="mil-upper mil-accent">Email: </span>&nbsp;&nbsp;
+                    <span className="mil-upper mil-dark">rachel@rachel-wallis.com</span>
                 </li>
             </ul>
         </div>
 
-        {/* map */}
-        <div className="mil-map mil-mb-90">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1396.5769090312324!2d-73.6519672!3d45.5673453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91f8abc30e0ff%3A0xfc6d9cbb49022e9c!2sManoir%20Saint-Joseph!5e0!3m2!1sen!2sua!4v1685485811069!5m2!1sen!2sua" 
-              style={{"border": "0"}} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade" 
-            />
-        </div>
-        {/* map end */}
-
+        {/* contact     
         <div className="mil-section-title mil-up">
             <div className="mil-divider" />
             <h3>Let's Talk</h3>
         </div>
 
-        {/* contact */}
+        
         <div id="contact" className="mil-p-90-60">
         <Formik
             initialValues = {{ email: '', name: '', message: '' }}
@@ -100,7 +86,6 @@ const Contact = () => {
                 handleBlur,
                 handleSubmit,
                 isSubmitting,
-                /* and other goodies */
             }) => (
             <form onSubmit={handleSubmit} id="contactForm" action={appData.settings.formspreeURL} className="row align-items-center">
                 <div className="col-lg-6 mil-up">
@@ -150,7 +135,7 @@ const Contact = () => {
             )}
             </Formik>
         </div>
-        {/* contact end */}
+         */}
     
     </Layouts>
   );
