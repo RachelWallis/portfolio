@@ -8,7 +8,7 @@ const CV = () => {
       <PageBanner pageTitle={"Rachel Wallis CV"} />
 
       {/* Profile Section */}
-      <section>
+      <section className="mil-cv-section">
         <div className="mil-section-title mil-up mil-left mil-mb-90">
           <div className="mil-divider"></div>
           <h3>Profile</h3>
@@ -22,7 +22,7 @@ const CV = () => {
       </section>
 
       {/* Work Experience Section */}
-      <section>
+      <section className="mil-cv-section">
         <div className="mil-section-title mil-up mil-left mil-mb-90">
           <div className="mil-divider"></div>
           <h3>Work Experience</h3>
@@ -76,7 +76,7 @@ const CV = () => {
       </section>
 
       {/* Skills Section */}
-      <section>
+      <section className="mil-cv-section">
         <div className="mil-section-title mil-up mil-left mil-mb-90">
           <div className="mil-divider"></div>
           <h3>Skills</h3>
@@ -88,7 +88,7 @@ const CV = () => {
       </section>
 
       {/* Strengths Section */}
-      <section>
+      <section className="mil-cv-section">
         <div className="mil-section-title mil-up mil-left mil-mb-90">
           <div className="mil-divider"></div>
           <h3>Strengths</h3>

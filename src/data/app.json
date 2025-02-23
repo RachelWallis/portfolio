@@ -30,14 +30,7 @@
                 "label": "CV",
                 "link": "/cv",
                 "children": 0
-            },
-            {
-                "label": "Blog",
-                "link": "/blog",
-                "children": 0
-
             }
-
 
         ]
     },

@@ -30,13 +30,16 @@ const ProjectsGrid = ({ projects, columns }) => {
                     }
                     {columns != 1 &&
                     <Link href={`/case-studies/${item.id}`} className="mil-portfolio-item mil-mb-60">
+                        <div className="{item.category}">
+                            <p className="mil-upper mil-mb-5">{item.category}</p>
+                        </div>
                         <div className="mil-cover-frame mil-up">
                             <img src={item.image} alt={item.title} />
                         </div>
                         <div className="mil-description mil-up">
                             <div>
-                                <p className="mil-upper mil-mb-5">{item.category}</p>
                                 <h4>{item.title}</h4>
+                                <p>test</p>
                             </div>
                             <div className="mil-link mil-icon-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right">

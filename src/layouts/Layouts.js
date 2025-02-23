@@ -7,8 +7,6 @@ import { anchorSscroll } from "../common/utilits";
 
 import Footer from "./footers/Index";
 import Header from "./headers/Index";
-import Preloader from "./preloader/Index";
-import LeftPanel from "./left-bar/Index";
 import RightPanel from "./right-bar/Index";
 import BackToTop from "./back-to-top/Index";
 

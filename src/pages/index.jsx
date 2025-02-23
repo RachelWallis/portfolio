@@ -16,8 +16,7 @@ const Home = (props) => {
       <HeroOneSection />
       <AboutSection />
       <SkillsSection />
-      <LatestPostsSection posts={props.posts} />
-      <CallToActionSection />
+{/* <LatestPostsSection posts={props.posts} /> */}      <CallToActionSection />
     </Layouts>
   );
 };
